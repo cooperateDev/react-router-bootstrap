@@ -16,16 +16,19 @@ var ButtonLink = React.createClass({
 
   getInitialState: function() {
     return {
-      href: '#'
+      href: '#',
+      isActive: false
     }
   },
 
   componentDidMount: function() {
     var params = this.getCleanedParams();
     var href = this.makeHref(this.props.to, params, this.props.query || null);
+    var isActive = this.isActive(this.props.to);
 
     this.setState({
-      href: href
+      href: href,
+      isActive: isActive
     });
   },
 
