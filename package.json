@@ -1,11 +1,12 @@
 {
   "name": "react-router-bootstrap",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "react-router and react-bootstrap compatible components",
   "main": "./lib/index.js",
   "scripts": {
-    "prepublish": "./node_modules/react-tools/bin/jsx -x js src lib && rm -rf lib/.module-cache",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "npm run build",
+    "build": "./node_modules/react-tools/bin/jsx -x js src lib && rm -rf lib/.module-cache",
+    "test": "xdg-open tests/0.11/index.html && xdg-open tests/0.12/index.html"
   },
   "repository": {
     "type": "git",
