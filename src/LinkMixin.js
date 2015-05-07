@@ -12,7 +12,6 @@ function isModifiedEvent(event) {
 module.exports = {
   propTypes: {
     activeClassName: React.PropTypes.string.isRequired,
-    disabled: React.PropTypes.bool,
     to: React.PropTypes.string.isRequired,
     params: React.PropTypes.object,
     query: React.PropTypes.object,
@@ -57,10 +56,6 @@ module.exports = {
   handleRouteTo: function (event) {
     var allowTransition = true;
     var clickResult;
-    
-    if (this.props.disabled) {
-      return;
-    }
 
     if (this.props.onClick) {
       clickResult = this.props.onClick(event);
