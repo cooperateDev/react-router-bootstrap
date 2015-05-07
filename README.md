@@ -37,10 +37,10 @@ React.createClass({
 
 ## Installation
 
-You will also (if you haven't already) want to install `react-router` and `react-bootstrap`
+You will also (if you haven't already) want to install `react-router`, `react-bootstrap`, and `classnames`
 
 ```
-npm install --save react-router react-bootstrap
+npm install --save react-router react-bootstrap classnames
 ```
 
 ## Usage
@@ -111,10 +111,6 @@ Router.run(routes, function (Handler) {
 });
 
 ```
-
-## Browser support
-
-This package depends on classnames, which requires [a polyfill for non-ES5 capable browsers](https://github.com/JedWatson/classnames#polyfills-needed-to-support-older-browsers).
 
 ## Contributing
 
