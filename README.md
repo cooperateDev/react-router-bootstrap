@@ -35,11 +35,6 @@ React.createClass({
 });
 ```
 
-It also defines modal and overlay triggers that forward router context:
-
-- `ModalTrigger` -> `RouterModalTrigger`
-- `OverlayTrigger` -> `RouterOverlayTrigger`
-
 ## Installation
 
 You will also (if you haven't already) want to install `react-router` and `react-bootstrap`
@@ -116,6 +111,10 @@ Router.run(routes, function (Handler) {
 });
 
 ```
+
+## Browser support
+
+This package depends on classnames, which requires [a polyfill for non-ES5 capable browsers](https://github.com/JedWatson/classnames#polyfills-needed-to-support-older-browsers).
 
 ## Contributing
 
