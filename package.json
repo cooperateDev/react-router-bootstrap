@@ -24,7 +24,7 @@
     "name": "Matt Smith",
     "email": "mtscout6@gmail.com"
   },
-  "license": "Apache-2.0",
+  "license": "Apache2",
   "bugs": {
     "url": "https://github.com/react-bootstrap/react-router-bootstrap/issues"
   },
@@ -42,6 +42,7 @@
     "chai": "^3.0.0",
     "css-loader": "^0.14.4",
     "eslint": "^0.22.1",
+    "eslint-plugin-babel": "^1.0.0",
     "eslint-plugin-mocha": "^0.2.2",
     "eslint-plugin-react": "^2.5.0",
     "file-loader": "^0.8.1",
