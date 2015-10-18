@@ -11,6 +11,7 @@ describe('IndexLinkContainer', () => {
   [
     'Button',
     'NavItem',
+    'MenuItem',
     'ListGroupItem'
   ].forEach(name => {
     describe(name, () => {
@@ -18,16 +19,19 @@ describe('IndexLinkContainer', () => {
 
       describe('active state', () => {
         function renderComponent(location) {
+          class LinkWrapper extends React.Component {
+            render() {
+              return (
+                <IndexLinkContainer to="/">
+                  <Component>Root</Component>
+                </IndexLinkContainer>
+              );
+            }
+          }
+
           const router = ReactTestUtils.renderIntoDocument(
             <Router history={createMemoryHistory(location)}>
-              <Route
-                path="/"
-                component={() => (
-                  <IndexLinkContainer to="/">
-                    <Component>Root</Component>
-                  </IndexLinkContainer>
-                )}
-              >
+              <Route path="/" component={LinkWrapper}>
                 <IndexRoute />
                 <Route path="foo" />
               </Route>
