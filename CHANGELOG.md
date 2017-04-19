@@ -1,15 +1,3 @@
-## [v0.24.1]
-> 2017-04-18
-
-- **Breaking** Support React Router v4 ([#201])
-- **Chore**: Update for React v15.5 deprecations
-
-[v0.24.1]: https://github.com/react-bootstrap/react-router-bootstrap/compare/v0.23.1...v0.24.1
-[#201]: https://github.com/react-bootstrap/react-router-bootstrap/pull/201
-
-## v0.24.0
-> This release was skipped.
-
 ## [v0.23.1]
 > 2016-07-25
 
