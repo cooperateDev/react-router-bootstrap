@@ -32,11 +32,11 @@ export default {
       },
     },
     {
-      'react-router-dom': {
-        root: 'ReactRouterDOM',
-        commonjs2: 'react-router-dom',
-        commonjs: 'react-router-dom',
-        amd: 'react-router-dom',
+      'react-router': {
+        root: 'ReactRouter',
+        commonjs2: 'react-router',
+        commonjs: 'react-router',
+        amd: 'react-router',
       },
     },
   ],
