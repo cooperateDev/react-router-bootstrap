@@ -31,7 +31,6 @@ Following plain React Bootstrap component
 ```
 becomes
 ```js
-import { LinkContainer } from 'react-router-bootstrap'
 <LinkContainer to="/foo/bar">
   <Button>Foo</Button>
 </LinkContainer>
